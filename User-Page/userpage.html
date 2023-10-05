@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>User Page</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-light">
+        <h1 class="display-4 text-center">My finance dashboard</h1>
+    </header>
+    <br><br>
+    <!--Columna-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">My dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mobile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Payments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Complaints</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Supports</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="text-center">
+            <section class="dashboard bg-light">
+                <h3 class="mb-3">Welcome to UniCafe Pyment Portal</h3>
+            </div>
+            </section>
+        
+            <section class="bills bg-light">
+                <div class="text-center">
+                    <h2 class="mb-3"><>Profile<></h2>
+                
+                </div>
+                <ul class="list-group">
+                    <div class="text-center">
+                    <li class="list-group-item">
+                        <h3 class="mb-1">Monthly Consumption</h3>
+                        <!--I guess this is how things are centered in BS-->
+                        <div class="text-center">
+                        <div class="img-center mx-auto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxskBELKkcItHXQFVTYI5p3_413uobvl2BHJLEM7PNg4cag9-l6n2mydDwws1CjV0ZTjw&usqp=CAU" alt="Smiley face" class="mb-3">
+                        </div>
+                        </div>
+                        <p class="mb-1">
+                            Receive updates about your payments, new products, etc., through: **********@gmail.com</p>
+                        <a href="#" class="btn btn-primary mb-1">ACTIVATE ACCOUNT</a>
+                        <a href="#" class="btn btn-primary mb-1">Save</a>
+                    </li>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationServer01" class="form-label">First name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" value="Cristiano" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationServer02" class="form-label">Last name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" value="Ronaldo" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationServerUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationServer03" class="form-label">City</label>
+                            <input type="text" class="form-control is-invalid" id="validationServer03"
+                                aria-describedby="validationServer03Feedback" required>
+                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationServer04" class="form-label">State</label>
+                            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+                                required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                            </select>
+                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationServer05" class="form-label">Zip</label>
+                            <input type="text" class="form-control is-invalid" id="validationServer05"
+                                aria-describedby="validationServer05Feedback" required>
+                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                    aria-describedby="invalidCheck3Feedback" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Agree to terms and conditions
+                                </label>
+                                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </ul>
+            </section>
+        </div>
+        
+      <!--NEW-->
+    <div class="col-md-3">
+        <section class="new-column bg-light">
+            <h2 class="mb-3 text-center">
+                <>Purchase History<>
+            </h2>
+            <ul class="list-group">
+                <div class="text-center">
+                    <li class="list-group-item">
+                        <h3 class="mb-1"></h3>
+                        
+                        <div class="text-center">
+                            <div class="img-center mx-auto">
+                                <img src="https://media.tenor.com/L1y5niSoeeMAAAAM/buenos-dias-chef.gif"
+                                    alt="Smiley face" class="mb-3">
+                            </div>
+                            <br>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar bg-success" style="width: 25%">25%</div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-primary mb-1">Save</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h3 class="mb-1">Available to Spend in Coffee</h3>
+                        <p class="mb-1">$ 200 Not Spend</p>
+                    </li>
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Well done!</h4>
+                        <p>Aww yeah, you have a lot to spent or should I say to invest in a pro-quality coffee, coffe that will mantain you always alert and full of energy. </p>
+                        <hr>
+                        <p class="mb-0">Thanks for choosing UniCafe.</p>
+                    </div>
+            </ul>
+            </section>
+            </div>
+        </section>
+    </div>
+    </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    </footer>
+
+</body>
+
+</html>
