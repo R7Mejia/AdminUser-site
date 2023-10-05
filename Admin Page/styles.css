@@ -2,21 +2,25 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
  
+}*/
+nav{
+  width: 630px;
+  justify-content: center;
+  margin: 0 200px;
 }
-
 .container {
+  width: 50%;
   display: flex;
-  background-color: rgb(4, 4, 4);
-  width: 0%;
+  justify-content: center;
   color: aliceblue;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -41,7 +45,6 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  background-color: rgba(20, 44, 55, 0.556);
   width: 100%;
   padding: 0px;
   margin-top: 5px;
@@ -136,7 +139,22 @@ img {
     height: 100px;
 }
 
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
 
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  #container-3{
+    width: min-content;
+  }
+}
 
 
 
